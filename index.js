@@ -6,6 +6,9 @@ function appendToDisplay(input){
     if (display.value === "0" && input === "0") {
         return; // Don't append if both are "0"
     }
+    if (display.value === "0" && input !== "0") {
+        display.value = input; // Replace "0" with the input
+    } else {
     display.value += input;
 }
 
