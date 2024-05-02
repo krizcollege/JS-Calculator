@@ -9,7 +9,8 @@ function appendToDisplay(input){
     if (display.value === "0" && input !== "0") {
         display.value = input; // Replace "0" with the input
     } else {
-    display.value += input;
+        display.value += input;
+    }
 }
 
 function clearDisplay(){
